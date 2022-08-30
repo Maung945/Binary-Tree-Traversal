@@ -9,10 +9,10 @@
 using namespace std;
 
 class BTraversal {
-private:
+ private:
 	Node* root;
 
-public:
+ public:
 	BTraversal();
 	Node* getRoot();
 	void in_display(Node* p);
@@ -21,7 +21,6 @@ public:
 	void BFS_traversal(Node* p);
 	Node* newNode(int e, Node* p);
 	Node* insert(int key, Node* p);
-
 };
 
 BTraversal::BTraversal() : root(nullptr) {}
@@ -84,7 +83,7 @@ void BTraversal::BFS_traversal(Node* p) {
 	if (p == nullptr) {
 		return;
 	}
-	
+
 	while(!Q.empty()) {
 		cout << Q.front()->data << " ";
 		if (Q.front()->left != nullptr) {
